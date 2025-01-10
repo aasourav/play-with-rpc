@@ -16,7 +16,7 @@ func main() {
 	}
 	defer clientConn.Close()
 
-	args := types.Args{A: 10, B: 0}
+	args := types.Args{A: 10, B: 12}
 
 	reply, err := client.Multiply(clientConn, args)
 	if err != nil {
